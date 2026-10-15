@@ -7,3 +7,8 @@ def lista_libri():
 	for libro in libri:
         	stato = "prestato" if libro["prestato"] else "disponibile"
 		print(f"{libro['titolo']} - {libro['autore']} ({stato})")
+def cerca_libro(titolo):
+	for libro in libri:
+		if libro["titolo"].lower() == titolo.lower():
+			return libro
+	return None
