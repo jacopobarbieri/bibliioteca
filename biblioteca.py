@@ -18,3 +18,8 @@ def restituisci_libro(titolo):
     if libro:
         libro["prestato"] = False
     return libro
+def presta_libro(titolo):
+    libro = cerca_libro(titolo)
+    if libro:
+        libro["prestato"] = True
+    return libro
