@@ -13,3 +13,8 @@ def cerca_libro(titolo):
 		if libro["titolo"].lower() == titolo.lower():
 			return libro
 	return None
+def presta_libro(titolo):
+    	libro = cerca_libro(titolo)
+	if libro:
+        	libro["prestato"] = True
+	return libro
