@@ -18,3 +18,5 @@ def restituisci_libro(titolo):
     if libro:
         libro["prestato"] = False
     return libro
+def calcola_multa(giorni_ritardo):
+    return giorni_ritardo * 0.20
